@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey-form-styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Survey form to collect data from users</p>
+    <form id="survey-form" method="post" action="https://survey-form-link.com">
+      <fieldset>
+        <label id="name-label" for="name">Name: 
+          <input type="text" id="name" placeholder="John Smith" required />
+          </label>
+        <label id="email-label" for="email">Email: 
+          <input type="email" id="email" placeholder="johnsmith@mail.ru" required />
+          </label>
+        <label id="number-label" for="number">Number: 
+          <input type="number" id="number" min="-100" max="100" placeholder="0" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">
+            Please, select an option: 
+            <select id="dropdown">
+              <option value="">(select option)</option>
+              <option value="1">option 1</option>
+              <option value="2">option 2</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="radio-one">
+            <input type="radio" name="radio" id="radio-one" value="1" class="inline" /> radio 1
+          </label>
+          <label for="radio-two">
+            <input type="radio" name="radio" id="radio-two" value="2" class="inline" /> radio 2
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="checkbox-one">
+            <input type="checkbox" value="1" id="checkbox-one" class="inline" /> checkbox 1
+          </label>
+          <label for="checkbox-two">
+            <input type="checkbox" value="2" id="checkbox-two" class="inline" /> checkbox 2
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="comment">
+            Add your comment: 
+            <textarea placeholder="I think..." id="comment"></textarea>
+         </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>

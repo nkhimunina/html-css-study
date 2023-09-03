@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #E4866Aff;
+  color: #242D30ff;
+  font-family: Verdana, sans-serif;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: #242D30ff;
+  padding: 1em;
+}
+
+a:hover {
+  background-color: #755047ff;
+  color: #FCFCFBff;
+}
+
+#nav-bar li {
+  list-style: none;
+  font-weight: 600;
+}
+
+button, #submit {
+  background-color: #4B7366ff;
+  color: #FCFCFBff;
+  font-family: Verdana, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 1em;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+button:hover, #submit:hover {
+  background-color: #755047ff;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #E4866Aff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+	align-items: center;
+}
+
+header nav ul {
+  display: flex;
+	text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  header nav ul {
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  header nav ul li {
+    padding: 1em;
+    margin: auto;
+  }
+}
+
+main {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60vw;
+}
+
+.description {
+  padding-right: 4em;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    width: 80vw;
+  }
+  .icon {
+    margin: 2em;
+  }
+}
+
+i {
+  font-weight: 900;
+  font-size: 2em;
+  text-align: center;
+  width: 10vw;
+}
+
+section {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#how-it-works > iframe {
+  aspect-ratio: 1.5;
+  width: 60%;
+}
+
+#pricing div {
+  display: flex;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+  margin: auto 1em;
+  border: 2px solid #755047ff;
+  border-radius: 5px;
+  padding: 2em;
+}
+
+@media (max-width: 800px) {
+  #pricing div {
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+  #pricing div:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.product li {
+  margin: 1em auto;
+}
+
+.product h1 {
+  background-color: #755047ff;
+  color: #FCFCFBff;
+  padding: 1em 4em;
+}
+
+.product h3 {
+  text-decoration: underline 3px #755047ff;
+}
+
+#email {
+  height: 2em;
+}
+
+#submit {
+  margin-left: 1em;
+}
