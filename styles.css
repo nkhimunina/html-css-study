@@ -124,21 +124,24 @@ span {
 }
 
 .project-image {
-  height: calc(100% - 5em);
   width: 100%;
   object-fit: cover;
+  height: 34vh;
 }
 
 .project-title {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: var(--brown);
-  padding: 1em;
+  height: 6vh;
 }
 
 .project {
   color: var(--yellow);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 .code {
