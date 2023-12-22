@@ -1,2 +1,1 @@
-# portfolio
-my personal portfolio
+# html-css-study
